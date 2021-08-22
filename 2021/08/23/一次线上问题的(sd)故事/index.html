@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>解决Thymeleaf标红问题 | Yolia</title>
+  <title>一次线上问题 | Yolia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Thymeleaf 标签取值的时候，idea标红线的问题。">
-<meta name="keywords" content="Thymeleaf">
+  <meta name="description" content="话说就有这么一天早上，刚出门就收到了客户反应系统进不去的情况，之后发现倒没什么大问题，并且没什么技术含量，但就是折腾了半天，所以这次的 sd 事件必须得记录下来。。正常来说，有经验的人不会出现这种问题。。所幸经过这次事件，我也算增加了不少的经验。">
+<meta name="keywords" content="啊这。。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决Thymeleaf标红问题">
-<meta property="og:url" content="http://yoursite.com/2021/08/08/解决thymeleaf标红/index.html">
+<meta property="og:title" content="一次线上问题">
+<meta property="og:url" content="http://yoursite.com/2021/08/23/一次线上问题的(sd)故事/index.html">
 <meta property="og:site_name" content="Yolia">
-<meta property="og:description" content="Thymeleaf 标签取值的时候，idea标红线的问题。">
+<meta property="og:description" content="话说就有这么一天早上，刚出门就收到了客户反应系统进不去的情况，之后发现倒没什么大问题，并且没什么技术含量，但就是折腾了半天，所以这次的 sd 事件必须得记录下来。。正常来说，有经验的人不会出现这种问题。。所幸经过这次事件，我也算增加了不少的经验。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-21T09:06:48.000Z">
+<meta property="og:updated_time" content="2021-08-22T16:55:55.560Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决Thymeleaf标红问题">
-<meta name="twitter:description" content="Thymeleaf 标签取值的时候，idea标红线的问题。">
+<meta name="twitter:title" content="一次线上问题">
+<meta name="twitter:description" content="话说就有这么一天早上，刚出门就收到了客户反应系统进不去的情况，之后发现倒没什么大问题，并且没什么技术含量，但就是折腾了半天，所以这次的 sd 事件必须得记录下来。。正常来说，有经验的人不会出现这种问题。。所幸经过这次事件，我也算增加了不少的经验。">
   
     <link rel="alternative" href="/atom.xml" title="Yolia" type="application/atom+xml">
   
@@ -150,14 +150,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-解决thymeleaf标红" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-一次线上问题的(sd)故事" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      解决Thymeleaf标红问题
+      一次线上问题
     </h1>
   
 
@@ -169,8 +169,8 @@
         </span>
 
 
-<a href="/2021/08/08/解决thymeleaf标红/" class="archive-article-date">
-  	<time datetime="2021-08-08T15:19:19.816Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-08</time>
+<a href="/2021/08/23/一次线上问题的(sd)故事/" class="archive-article-date">
+  	<time datetime="2021-08-22T16:56:35.307Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-23</time>
 </a>
 
 
@@ -181,7 +181,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">92字</span>
+        <span class="post-count">2.2k字</span>
       </span>
     </span>
 
@@ -190,7 +190,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">8分</span>
       </span>
     </span>
 </div>
@@ -207,22 +207,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Thymeleaf 标签取值的时候，idea标红线的问题。</p>
+        <p>话说就有这么一天早上，刚出门就收到了客户反应系统进不去的情况，之后发现倒没什么大问题，并且没什么技术含量，但就是折腾了半天，所以这次的 sd 事件必须得记录下来。。正常来说，有经验的人不会出现这种问题。。所幸经过这次事件，我也算增加了不少的经验。</p>
 <a id="more"></a>
 
-<p>原因：</p>
-<p>在项目配置文件中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//springboot默认设置的thymeleaf是这样的:</span><br><span class="line">spring.thymeleaf.prefix=classpath:/templates/</span><br></pre></td></tr></table></figure>
+<p><strong>1、事情起因</strong></p>
+<p>当时听客户那边说，系统页面进不去，我一看页面，貌似是服务崩了，后来他们说是重启过服务器，哦，这才知道，服务器上开启的各种服务，有大部分并没有设置成自动启动，所以才导致这种情况。</p>
+<p><strong>2、解决过程</strong></p>
+<p>那么我一想，重启一下服务不就完了，最多再设置个服务自动重启，《不就完了？》。。然而，这个过程充满了坑，，啊，当然，还是那句话，我目前经验尚浅，所以才会搞的比较艰难。。</p>
+<p>首先，系统包括前端 Nginx 服务，后端 Tomcat 服务，算法 IO 服务、以及 Redis、RabbitMQ、MySQL这些。其中就只有 RabbitMQ 自动重启了，其他都莫得了。。。</p>
+<p>那么先将前后端以及 Redis 都启动，一般来说 MySQL 服务都是能自动重启来着，所以我是在发现系统登陆不进之后，登录 MySQL 服务器才发现连接不上了。那么就开始重启 MySQL，，，，，，到这里，第一个问题来了，，MySQL 重启 -&gt; <strong>service mysqld restart</strong> 失败了，卧槽懵了，按理来说，配好的 MySQL 没理由启动失败，失败原因是这样的：</p>
+<p>can’t connect to local mysql server through socket ‘/var/lib/mysql/mysql.sock’</p>
+<p>Job for mysqld.service failed because the control process exited with error code. See “systemctl status mysqld.service” and “journalctl -xe” for details.</p>
+<p>系统提示通过 systemctl status mysqld.service  或者 journalctl -xe 命令来查看详情。</p>
+<ul>
+<li><p>好，那来执行一下 <strong>systemctl status mysqld.service</strong> </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mysqld.service - MySQL Server</span><br><span class="line">   Loaded: loaded (/usr/lib/systemd/system/mysqld.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: deactivating (final-sigterm) (Result: exit-code) since Wed 2021-08-19 10:01:08 CST; 50s ago</span><br><span class="line">     Docs: man:mysqld(8)</span><br><span class="line">           http://dev.mysql.com/doc/refman/en/using-systemd.html</span><br><span class="line">  Process: 32685 ExecStart=/usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid <span class="formula">$MYSQLD_OPTS (code=exited, status=1/FAILURE)</span></span><br><span class="line"><span class="formula">  Process: 32668 ExecStartPre=/usr/bin/mysqld_pre_systemd (code=exited, status=0/SUCCESS)</span></span><br><span class="line"><span class="formula"> Main PID: 30830 (code=exited, status=0/SUCCESS)</span></span><br><span class="line"><span class="formula">   CGroup: /system.slice/mysqld.service</span></span><br><span class="line"><span class="formula">           └─32689 /usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid</span></span><br><span class="line"><span class="formula"></span></span><br><span class="line"><span class="formula">Aug 19 10:01:08 lee systemd[1]: mysqld.service holdoff time over, scheduling restart.</span></span><br><span class="line"><span class="formula">Aug 19 10:01:08 lee systemd[1]: Starting MySQL Server...</span></span><br><span class="line"><span class="formula">Aug 19 10:01:08 lee systemd[1]: mysqld.service: control process exited, code=exited status=1</span></span><br></pre></td></tr></table></figure>
 
-<p>而在自己的 Controller 中，是这样的：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>好，一眼看去。。没得到什么比较明显的信息。就根据 process：32685 得知，mysqld 没启动。</p>
+</li>
+<li><p>那继续执行 <strong>journalctl -xe</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Aug 19 10:03:17 lee systemd[1]: Unit mysqld.service entered failed state.</span><br><span class="line">Aug 19 10:03:17 lee systemd[1]: mysqld.service failed.</span><br><span class="line">Aug 19 10:03:17 lee systemd[1]: mysqld.service holdoff time over, scheduling restart.</span><br><span class="line">Aug 19 10:03:17 lee systemd[1]: Starting MySQL Server...</span><br><span class="line">-- Subject: Unit mysqld.service has begun start-up</span><br><span class="line">-- Defined-By: systemd</span><br><span class="line">-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel</span><br><span class="line">-- </span><br><span class="line">-- Unit mysqld.service has begun starting up.</span><br><span class="line">Aug 19 10:03:17 lee mysqld[10921]: Initialization of mysqld failed: 0</span><br><span class="line">Aug 19 10:03:17 lee systemd[1]: mysqld.service: control process exited, code=exited status=1</span><br><span class="line">Aug 19 10:03:17 lee systemd[1]: Failed to start MySQL Server.</span><br><span class="line">-- Subject: Unit mysqld.service has failed</span><br><span class="line">-- Defined-By: systemd</span><br><span class="line">-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel</span><br><span class="line">-- </span><br><span class="line">-- Unit mysqld.service has failed.</span><br><span class="line">-- </span><br><span class="line">-- The result is failed.</span><br></pre></td></tr></table></figure>
 
-<p>这样会导致解析路径的时候，变为这样：/templates//admins/index</p>
-<p>所以解决方法：</p>
-<p>删除一处多余的 / </p>
-<p>比如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spring.thymeleaf.prefix=classpath:/templates</span><br></pre></td></tr></table></figure>
-
+<p>也就是说启动失败，没啥东西。</p>
+</li>
+<li><p>那么发生过这次事件的我来说，一定要去<strong>看日志</strong>，非常重要，能极大的提高找到问题的几率。。</p>
+<p>那直接上日志， tail -n500 /var/log/mysqld.log|grep -E ‘Warning|ERROR’</p>
+<p>仅打印 Error 日志</p>
+<p>这里仅列出一下重要的信息<br>failed on ‘./ibdatal’ can’t determine file permissions</p>
+<p>就这句话，我之前还以为是 mysqld 这个文件需要给里边写入其他文件没有权限，然后还运行了命令去修改 mysqld 文件的权限 <strong>chown -R mysql:mysql /var/lib/mysql</strong></p>
+<p>然后当我以为好了，再次去启动，还是之前的报错，那么我直接将日志的那条信息拿去搜索了一下，有这么个方法，关闭 SELinux 后再重启，命令是 <strong>setenforce 0</strong> 意思就是将 SELinux 的运行模式切换成 Permissive 宽容模式，并非永久性的，永久关闭可以直接去 vi /etc/selinux/config 里将 SELINUX=enforcing 强制模式改为 SELINUX=disabled 模式，不过那肯定是不建议，</p>
+<p>因为：献上一段官方概念：<strong>安全增强型 Linux（SELinux）是一种采用安全架构的 <a href="https://www.redhat.com/zh/topics/linux/what-is-linux" target="_blank" rel="noopener">Linux® 系统</a>，它能够让管理员更好地管控哪些人可以访问系统。它最初是作为 <a href="https://www.redhat.com/zh/topics/linux/what-is-the-linux-kernel" target="_blank" rel="noopener">Linux 内核</a>的一系列补丁，由美国国家安全局（NSA）利用 Linux 安全模块（LSM）开发而成。</strong></p>
+<p>所以直接使用 setenforce 0 设置一下就 OK ，这时再去启动 MySQL 发现启动成功。</p>
+</li>
+</ul>
+<p><strong>3、继续</strong></p>
+<p>搞完上边那些后，再去启动了下算法的 IO 包，这是个 jar 包，使用的 SpringBoot ，那么直接 </p>
+<p>nohup java -jar xxx-service.jar &amp; </p>
+<p>这个包主要是作为一个算法端和后端的一个桥梁，为算法递交后端数据、为后端递交算法的输出数据，这里设置了个监听，也就充当了个消费者，监听的是后端的 RabbitMQ 端，有任务的时候直接交给算法去执行。坑主要就在这里。。。。现在反过头来再看确实什么都不是，但当时我各种查问题，各种找问题，服务器权限，rabbitMQ 配置等等全都试了一遍，，简直是无头苍蝇瞎撞。最后还是没办法问了大佬。。结果找到问题的一瞬间，，，，，，- -!!!</p>
+<p>好，启动这个 jar 包后，系统此时就已经是可以运行了 </p>
+<p>直接联系客户，系统可以启动了，去跑个算法试试，然后，卡住了。。后台没一点反应，，玩球，肯定是后台或者是算法 IO 那边有问题。于是乎，上算法 IO 服务器将 jar 又重新运行了一次，还是没有反应，打开 RabbitMQ，发现连接中并没有算法 IO 服务器的连接，那就肯定是这里出问题了，由于之前 MySQL 的缘故，又想是不是权限的问题，还是防火墙，又或是端口开放的问题，因为客户这边最近一直在搞网络安全，各种尝试后，还是没有算法的连接。</p>
+<p>随即又转向了 RabbitMQ 是不是哪里配置出问题了，又各种检查，但是想来又没道理啊，只是服务器重启了，代码什么的都没动，怎么可能配置有问题，又没有人动过。<strong>甚至还手动的去 RabbitMQ 的队列里创建了一条消息，看看有没有反应。。（这个操作又为之后挖了个大坑。。）</strong> 还是不行。怎么办，，找大佬帮忙啊，客户那边耽搁不得，然后大佬过来一通询问，直接打开了算法 IO 服务的日志去查看，说到这里，关于 SpringBoot 的服务我是没有非常熟悉的，平时的打包直接 idea ，部署直接复制一条命令，就直接开启服务了。。。好，那么打开日志之后呢，赫然发现里边一大串串串非常 TM 熟悉的 IP，这不是公司的服务器 IP 么？？？嗯？？？卧槽？直接秒懂，环境搞错了，，在运行 jar 包的时候，后边需要加上 prod 的后缀，也就是生产环境，因为默认运行的是开发环境，确实在这次重启服务的时候就觉的这个命令好像短了一些，但又没怎么关心，哎。。</p>
+<p>好了，重新跑了之后，RabbitMQ 那边立刻就有了反应，多了一条连接，到这里就算完事了？呵，没有，，，跑了个算法，发现，还是卡住，为什么，因为 RabbitMQ 没有消费那条任务，明明发过去了，为什么不消费？而且队列里还有两条消息？？什么？两条？？啊？突然想起，，之前捣鼓 MQ 的时候，手动发送了个 Message 还在里边呢，这次我学会了，直接去看日志，里边就是一条条条，，我手动创建的那个 ”111“ ，哇，，没删掉，导致一直在玩这个消息，后续算法运行发来的一直在队列等待，因为那条 ”111“ 是一直存在的，那好嘛，删掉就行了，终于。。。跑了算法，也有反应的，也成功接收到了算法返回的输出。。。几经波折终于是搞定了，，内心可谓是·····嗯。</p>
+<p>最后，我要说的是，这次除了一些经验上的教训，那是我不懂，但是有一点，日志这个东西很重要，这里边会有非常重要的信息，是解决问题的关键所在，当然平时我倒也看日志，只不过没看过 SpringBoot 服务的输出日志。。。说白了还是经验不足。over。</p>
 
       
 
@@ -236,7 +262,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Thymeleaf</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">啊这。。</a>
         		</li>
       		
 		</ul>
@@ -292,7 +318,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/08/08/解决thymeleaf标红/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/08/23/一次线上问题的(sd)故事/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,18 +332,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/08/08/设计模式-单例模式/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          设计模式-单例模式
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/08/08/解决mysql报错/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决MySQL报错</div>
+    <a href="/2021/08/22/hexo转移新电脑/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo转移至新电脑</div>
       <i class="icon-circle-right"></i>
     </a>
   
